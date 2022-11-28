@@ -13,12 +13,12 @@ const Nav = () => {
             </Link>
           </li>
           <li>
-            <Link to="/Destination">
+            <Link to="/Destination/moon">
               <span>01</span> Destination
             </Link>
           </li>
           <li>
-            <Link to="/Crew">
+            <Link to="/Crew/victor-glover">
               <span>02</span> Crew
             </Link>
           </li>

@@ -16,6 +16,7 @@ import victor from "./assets/crew/image-victor-glover.png";
 import mark from "./assets/crew/image-mark-shuttleworth.png";
 import douglas from "./assets/crew/image-douglas-hurley.png";
 import anousheh from "./assets/crew/image-anousheh-ansari.png";
+import Technology from "./Components/Technology";
 function App() {
   return (
     <div className="App container">
@@ -141,6 +142,17 @@ function App() {
                 name="Mark Shuttleworth"
                 description="Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist."
                 image={mark}
+              />
+            }
+          />
+          {/* technology routes */}
+          <Route
+            path="Technology/vehicle"
+            element={
+              <Technology
+                intro="this is intro"
+                name="this is the name"
+                description="this is descriptoin"
               />
             }
           />

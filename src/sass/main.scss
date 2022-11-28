@@ -1,0 +1,15 @@
+.container{
+    width: 99%;
+    max-width: 1440px;
+}
+.f-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.f-2-v{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}

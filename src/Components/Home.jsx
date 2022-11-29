@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import '../sass/home.css'
+import "../sass/home.css";
 const Home = () => {
   return (
     <section className="home f-2">

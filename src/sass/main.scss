@@ -1,34 +1,33 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    color:white;
-    font-family: 'Cairo', sans-serif;
-    // font-family: 'Forum', cursive;
-    font-size: 1em
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Cairo", sans-serif;
+  // font-family: 'Forum', cursive;
+  font-size: 1em;
 }
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
-body{
-    height: 100vh;
-    background-color: gray;
-    background-image: url('../assets/home/background-home-desktop.jpg');
-    background-size: cover;
-    
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
+body {
+  height: 100vh;
+  background-color: gray;
+  background-image: url("../assets/home/background-home-desktop.jpg");
+  background-size: cover;
 }
-.container{
-    margin: auto;
-    width: 100%;
-    max-width: 1440px;
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: 1440px;
 }
-.f-2{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.f-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.f-2-v{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+.f-2-v {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }

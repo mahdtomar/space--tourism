@@ -1,7 +1,64 @@
-* {
-  margin: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0px;
+nav {
+  padding-top: 25px;
+  position: relative;
+  font-size: 1.2em;
+}
+
+nav .blur {
+  width: 50%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(100px);
+          backdrop-filter: blur(100px);
+}
+
+nav .blur ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 50px;
+  background-blend-mode: darken;
+}
+
+nav .blur ul li {
+  border-bottom: 2px solid transparent;
+  text-align: center;
+  margin-inline: 10px;
+  white-space: nowrap;
+  padding: 20px 0px 20px;
+  -webkit-transition: border 0.5s;
+  transition: border 0.5s;
+}
+
+nav .blur ul li:hover {
+  border-color: white;
+}
+
+nav .blur ul li span {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav .blur ul li a {
+  text-decoration: none;
+}
+
+nav img {
+  padding: 0px 20px;
+}
+
+nav hr {
+  position: absolute;
+  width: 27%;
+  left: 25%;
+  background-color: white;
+  z-index: 9;
 }
 /*# sourceMappingURL=nav.css.map */

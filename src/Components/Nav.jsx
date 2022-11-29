@@ -6,6 +6,8 @@ const Nav = () => {
     <nav>
       <div className="container f-2">
         <img src={logo} alt="" />
+        <hr />
+        <div className="blur">
         <ul>
           <li>
             <Link to="/">
@@ -28,6 +30,7 @@ const Nav = () => {
             </Link>
           </li>
         </ul>
+        </div>
       </div>
     </nav>
   );

@@ -16,12 +16,12 @@
       text-transform: uppercase;
       margin: 30px 0px;
     }
-
     &.button {
       width: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
+      border: none;
       button {
         border-radius: 50%;
         height: 250px;

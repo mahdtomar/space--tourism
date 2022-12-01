@@ -13,7 +13,7 @@
 body {
   height: 100vh;
   background-color: gray;
-  background-image: url("../assets/home/background-home-desktop.jpg");
+  background-image: url("../assets/destination/background-destination-desktop.jpg");
   background-size: cover;
 }
 
@@ -49,5 +49,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.banner {
+  font-size: 7em;
+  display: block;
+  letter-spacing: 10px;
+  font-family: "Forum", cursive;
+  text-transform: uppercase;
+  margin: 30px 0px;
 }
 /*# sourceMappingURL=main.css.map */

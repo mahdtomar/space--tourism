@@ -16,7 +16,7 @@ const Home = () => {
       </div>
       <div className="button">
         <button>
-          <Link to="/Destination">Explore</Link>
+          <Link to="/Destination/moon">Explore</Link>
         </button>
       </div>
     </section>

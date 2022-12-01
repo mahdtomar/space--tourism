@@ -1,0 +1,96 @@
+.destination {
+  padding: 0px 20px;
+  margin-top: 50px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.destination .info-container nav {
+  text-transform: uppercase;
+}
+
+.destination .info-container nav ul {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.destination .info-container nav ul a {
+  padding: 10px 0px;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: 0.5s border;
+  transition: 0.5s border;
+}
+
+.destination .info-container nav ul a:hover {
+  border-color: white;
+}
+
+.destination > div {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.destination .planet-info hr {
+  margin: 30px 0px;
+}
+
+.destination .planet-info .f-2 {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.destination .planet-info .f-2 .distance,
+.destination .planet-info .f-2 .time {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  letter-spacing: 2px;
+  font-family: "Forum", cursive;
+  text-transform: uppercase;
+}
+
+.destination .planet-info .f-2 .distance p:nth-child(2),
+.destination .planet-info .f-2 .time p:nth-child(2) {
+  font-size: 1.5em;
+}
+
+.destination .planet-info .f-2 div {
+  width: 50%;
+  margin-right: 30px;
+}
+
+.destination .planet img {
+  margin: 40px 0px;
+  width: 80%;
+}
+
+.destination .planet p {
+  font-size: 2em;
+}
+
+.destination .planet p span {
+  font-weight: bold;
+  color: grey;
+}
+/*# sourceMappingURL=destination.css.map */

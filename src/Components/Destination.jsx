@@ -1,6 +1,7 @@
 import React from "react";
 // import PlanetInfo from "./PlanetInfo";
 import { Link } from "react-router-dom";
+import '../sass/destination.css'
 const Destination = (props) => {
   return (
     <section className="destination f-2">

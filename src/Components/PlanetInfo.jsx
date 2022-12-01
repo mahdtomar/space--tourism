@@ -4,11 +4,11 @@ const PlanetInfo = (props) => {
   return (
     <div className="planet-info">
       <span className="banner">{props.name}</span>
-      <p>this is p</p>
+      <p>{props.planetDescriptoin}</p>
       <hr />
       <div className="f-2">
-        <div className="distance">{props.distance} Kilo Meters</div>
-        <div className="time">{props.time} Months</div>
+        <div className="distance f-2-v"><p>avg. distance</p><p>{props.distance}</p></div>
+        <div className="time f-2-v"><p>est. travel time</p><p>{props.time}</p></div>
       </div>
     </div>
   );

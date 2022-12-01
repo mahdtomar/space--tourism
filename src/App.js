@@ -17,6 +17,13 @@ import mark from "./assets/crew/image-mark-shuttleworth.png";
 import douglas from "./assets/crew/image-douglas-hurley.png";
 import anousheh from "./assets/crew/image-anousheh-ansari.png";
 import Technology from "./Components/Technology";
+import archive from "./data.json";
+const data = archive;
+const Moon = data.destinations[0];
+const Mars = data.destinations[1];
+const Europe = data.destinations[2];
+const Titan = data.destinations[3];
+console.log(Moon,Mars,Titan,Europe)
 function App() {
   return (
     <div className="App container">
@@ -24,7 +31,6 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/Destination" element={<Destination />} />  */}
           {/* Destinatin routes */}
           <Route
             path="/Destination/moon"
@@ -34,9 +40,9 @@ function App() {
                 planetInfo={
                   <PlanetInfo
                     planetName="moon"
-                    planetDescriptoin="this is the moon's description"
-                    distance="100"
-                    time="1.3"
+                    planetDescriptoin={Moon.description}
+                    distance={Moon.distance}
+                    time={Moon.travel}
                     name="moon"
                   />
                 }
@@ -52,9 +58,9 @@ function App() {
                 planetInfo={
                   <PlanetInfo
                     planetName="titan"
-                    planetDescriptoin="this is the titan's description"
-                    distance="560"
-                    time="12"
+                    planetDescriptoin={Titan.description}
+                    distance={Titan.distance}
+                    time={Titan.travel}
                     name="titan"
                   />
                 }
@@ -70,9 +76,9 @@ function App() {
                 planetInfo={
                   <PlanetInfo
                     planetName="mars"
-                    planetDescriptoin="this is the mars's description"
-                    distance="50"
-                    time="32"
+                    planetDescriptoin={Mars.description}
+                    distance={Mars.distance}
+                    time={Mars.travel}
                     name="mars"
                   />
                 }
@@ -88,9 +94,9 @@ function App() {
                 planetInfo={
                   <PlanetInfo
                     planetName="europa"
-                    planetDescriptoin="this is the europa's description"
-                    distance="230"
-                    time="962"
+                    planetDescriptoin={Europe.description}
+                    distance={Europe.distance}
+                    time={Europe.travel}
                     name="europa"
                   />
                 }

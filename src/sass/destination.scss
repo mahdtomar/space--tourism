@@ -1,0 +1,66 @@
+.destination {
+  padding: 0px 20px;
+  margin-top: 50px;
+  flex-direction: row-reverse;
+  justify-content: center;
+  .info-container {
+    nav {
+      text-transform: uppercase;
+      ul {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        a {
+          padding: 10px 0px;
+          text-decoration: none;
+          border-bottom: 2px solid transparent;
+          transition: 0.5s border;
+          &:hover {
+            border-color: white;
+          }
+        }
+      }
+    }
+  }
+  > div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .planet-info {
+    hr {
+      margin: 30px 0px;
+    }
+    .f-2 {
+      justify-content: left;
+      .distance,
+      .time {
+        align-items: flex-start;
+        letter-spacing: 2px;
+        font-family: "Forum", cursive;
+        text-transform: uppercase;
+        p:nth-child(2) {
+          font-size: 1.5em;
+        }
+      }
+      div {
+        width: 50%;
+        margin-right: 30px;
+      }
+    }
+  }
+  .planet {
+    img {
+      margin: 40px 0px;
+      width: 80%;
+    }
+    p {
+      font-size: 2em;
+      span {
+        font-weight: bold;
+        color: grey;
+      }
+    }
+  }
+}

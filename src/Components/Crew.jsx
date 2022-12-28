@@ -1,20 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import "../sass/crew.css";
 const Crew = (props) => {
   return (
     <section className="Crew f-2">
       <div className="f-2-v">
         <div className="person-info">
-          <span className="job-title">{props.job}job</span>
-          <span className="banner">{props.name}name</span>
-          <p>{props.description}desctiption</p>
+          <span className="job-title">{props.job}</span>
+          <span className="banner">{props.name}</span>
+          <p>{props.description}</p>
         </div>
         <div className="navigation">
-            <Link to='/Crew/Victor-Glover'><span>victor</span></Link>
-            <Link to='/Crew/Mark-Shuttleworth'><span>Mark</span></Link>
-            <Link to='/Crew/Anousheh-Ansari'><span>Anousheh</span></Link>
-            <Link to='/Crew/Douglas-Hurley'><span>Douglas</span></Link>
+          <Link to="/Crew/Victor-Glover">
+            <span className="dot"></span>
+          </Link>
+          <Link to="/Crew/Mark-Shuttleworth">
+            <span className="dot"></span>
+          </Link>
+          <Link to="/Crew/Anousheh-Ansari">
+            <span className="dot"></span>
+          </Link>
+          <Link to="/Crew/Douglas-Hurley">
+            <span className="dot"></span>
+          </Link>
         </div>
       </div>
       <div className="image">

@@ -1,0 +1,42 @@
+.Crew {
+  height: 90vh;
+  padding: 30px;
+  .f-2-v {
+    max-width: 50%;
+    position: relative;
+    .person-info {
+      .job-title {
+        font-family: "Forum", cursive;
+        font-size: 2.5em;
+        letter-spacing: 2px;
+        color: grey;
+        // font-weight: bold;
+      }
+      .banner {
+        font-size: 5em;
+      }
+    }
+    .navigation {
+      width: 150px;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      right: 50%;
+      transform: translateX(50%);
+      margin-top: 30px;
+      .dot {
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: white;
+      }
+    }
+  }
+  .image {
+    height: 80%;
+    img {
+      height: 100%;
+    }
+  }
+}

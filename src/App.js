@@ -18,12 +18,15 @@ import douglas from "./assets/crew/image-douglas-hurley.png";
 import anousheh from "./assets/crew/image-anousheh-ansari.png";
 import Technology from "./Components/Technology";
 import archive from "./data.json";
+import vehicleImage from "./assets/technology/image-launch-vehicle-portrait.jpg";
+import spaceportImage from "./assets/technology/image-spaceport-portrait.jpg";
+import capsuletImage from "./assets/technology/image-space-capsule-portrait.jpg";
 const data = archive;
 const Moon = data.destinations[0];
 const Mars = data.destinations[1];
 const Europe = data.destinations[2];
 const Titan = data.destinations[3];
-console.log(Moon,Mars,Titan,Europe)
+console.log(Moon, Mars, Titan, Europe);
 function App() {
   return (
     <div className="App container">
@@ -152,13 +155,46 @@ function App() {
             }
           />
           {/* technology routes */}
+
           <Route
             path="Technology/vehicle"
             element={
               <Technology
-                intro="this is intro"
-                name="this is the name"
-                description="this is descriptoin"
+                intro="The terminology..."
+                name="Launch vehicle"
+                description="A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+                payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+                WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+                it's quite an awe-inspiring sight on the launch pad!"
+                image={vehicleImage}
+              />
+            }
+          />
+          <Route
+            path="Technology/Spaceport"
+            element={
+              <Technology
+                intro="The terminology..."
+                name="Spaceport"
+                description="A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
+                by analogy to the seaport for ships or airport for aircraft. Based in the 
+                famous Cape Canaveral, our spaceport is ideally situated to take advantage 
+                of the Earth’s rotation for launch."
+                image={spaceportImage}
+              />
+            }
+          />
+          <Route
+            path="Technology/capsule"
+            element={
+              <Technology
+                intro="The terminology..."
+                name="Space capsulet"
+                description="A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
+                capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
+                you'll spend your time during the flight. It includes a space gym, cinema, 
+                and plenty of other activities to keep you entertained."
+                image={capsuletImage}
               />
             }
           />

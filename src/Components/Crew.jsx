@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../sass/crew.css";
 const Crew = (props) => {
+  useEffect(()=>{
+    let dots = document.querySelectorAll(".dot");
+    dots.forEach((dot)=>{
+      
+    })
+  },[])
   return (
     <section className="Crew f-2">
       <div className="f-2-v">

@@ -26,7 +26,7 @@ const Moon = data.destinations[0];
 const Mars = data.destinations[1];
 const Europe = data.destinations[2];
 const Titan = data.destinations[3];
-console.log(Moon, Mars, Titan, Europe);
+// console.log(Moon, Mars, Titan, Europe);
 function App() {
   return (
     <div className="App container">

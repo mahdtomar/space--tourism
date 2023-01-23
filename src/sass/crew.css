@@ -8,6 +8,10 @@
   position: relative;
 }
 
+.Crew .f-2-v .person-info .banner {
+  letter-spacing: 3px;
+}
+
 .Crew .f-2-v .person-info .job-title {
   font-family: "Forum", cursive;
   font-size: 2.5em;

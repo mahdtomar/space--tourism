@@ -1,0 +1,38 @@
+.technology {
+  max-width: 95%;
+  margin: 100px auto;
+  .banner{
+    font-size: 6em;
+    letter-spacing: 3px;
+  }
+  .info-container {
+    width: 60%;
+    .info{
+        width: 80%;
+    }
+    .link-container {
+      height: 450px;
+      padding-right: 30px;
+      .link {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 2em;
+        &.active {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+  }
+  .imageContainer {
+    width: 50%;
+    img{
+        max-width: 100%;
+    }
+  }
+}

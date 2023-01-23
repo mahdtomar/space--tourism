@@ -27,7 +27,8 @@ nav .blur ul {
   background-blend-mode: darken;
 }
 
-nav .blur ul li {
+nav .blur ul a {
+  z-index: 20;
   border-bottom: 2px solid transparent;
   text-align: center;
   margin-inline: 10px;
@@ -35,19 +36,25 @@ nav .blur ul li {
   padding: 20px 0px 20px;
   -webkit-transition: border 0.5s;
   transition: border 0.5s;
+  text-decoration: none;
 }
 
-nav .blur ul li:hover {
+nav .blur ul a:hover {
   border-color: white;
 }
 
-nav .blur ul li span {
-  font-weight: bold;
-  letter-spacing: 2px;
+nav .blur ul a[active] {
+  border-color: white;
 }
 
-nav .blur ul li a {
-  text-decoration: none;
+nav .blur ul a li {
+  z-index: 10;
+}
+
+nav .blur ul a span {
+  z-index: 10;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 nav img {

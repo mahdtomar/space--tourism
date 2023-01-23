@@ -1,17 +1,42 @@
 import React from "react";
+import { useEffect } from "react";
 // import PlanetInfo from "./PlanetInfo";
 import { Link } from "react-router-dom";
-import '../sass/destination.css'
+import "../sass/destination.css";
 const Destination = (props) => {
+  useEffect(() => {
+    let planetNavBtns = document.querySelectorAll(".planet-btn");
+
+    planetNavBtns.forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        let currentActive = e.target;
+        setActive(currentActive);
+      });
+    });
+    function setActive(target) {
+      planetNavBtns.forEach((btn) => {
+        btn.removeAttribute("active");
+      });
+      target.setAttribute("active", true);
+    }
+  }, []);
   return (
     <section className="destination f-2">
       <div className="info-container">
         <nav>
           <ul>
-            <Link to="/Destination/moon">moon</Link>
-            <Link to="/Destination/titan">titan</Link>
-            <Link to="/Destination/europa">europa</Link>
-            <Link to="/Destination/mars">mars</Link>
+            <Link className="planet-btn" active="true" to="/Destination/moon">
+              moon
+            </Link>
+            <Link className="planet-btn" to="/Destination/titan">
+              titan
+            </Link>
+            <Link className="planet-btn" to="/Destination/europa">
+              europa
+            </Link>
+            <Link className="planet-btn" to="/Destination/mars">
+              mars
+            </Link>
           </ul>
         </nav>
         {props.planetInfo}

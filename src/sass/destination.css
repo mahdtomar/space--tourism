@@ -32,7 +32,7 @@
   transition: 0.5s border;
 }
 
-.destination .info-container nav ul a:hover {
+.destination .info-container nav ul a:hover, .destination .info-container nav ul a[active] {
   border-color: white;
 }
 

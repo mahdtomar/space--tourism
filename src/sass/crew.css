@@ -3,6 +3,10 @@
   padding: 30px;
 }
 
+.Crew .text-container {
+  height: 430px;
+}
+
 .Crew .f-2-v {
   max-width: 50%;
   position: relative;
@@ -43,6 +47,12 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
+  background-color: grey;
+  -webkit-transition: 0.1s background;
+  transition: 0.1s background;
+}
+
+.Crew .f-2-v .navigation .dot[active], .Crew .f-2-v .navigation .dot:hover {
   background-color: white;
 }
 

@@ -27,10 +27,14 @@ const Nav = () => {
         <hr />
         <div className="blur">
           <ul>
-            <Link className="main-nav-btn" active="true" to="/">
+            <Link className="main-nav-btn" to="/">
               <span>00</span> Home
             </Link>
-            <Link className="main-nav-btn" to="/Destination/moon">
+            <Link
+              className="main-nav-btn"
+              id="destination"
+              to="/Destination/moon"
+            >
               <span>01</span> Destination
             </Link>
             <Link className="main-nav-btn" to="/Crew/victor-glover">

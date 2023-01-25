@@ -22,7 +22,7 @@ const Nav = () => {
   }, []);
   return (
     <nav>
-      <div className="container f-2">
+      <div className="container nav-container f-2">
         <img src={logo} alt="" />
         <hr />
         <div className="blur">

@@ -15,7 +15,8 @@
           text-decoration: none;
           border-bottom: 2px solid transparent;
           transition: 0.5s border;
-          &:hover,&[active] {
+          &:hover,
+          &[active] {
             border-color: white;
           }
         }
@@ -60,6 +61,32 @@
       span {
         font-weight: bold;
         color: grey;
+      }
+    }
+  }
+}
+@media (max-width: 770px) {
+  .destination {
+    .planet {
+      align-items: center;
+    }
+    flex-direction: column-reverse;
+    .info-container {
+      nav {
+        ul {
+          justify-content: space-between;
+          width: 100%;
+        }
+      }
+    }
+    .planet-info{
+      .planet-calc.f-2 {
+        div {
+          margin-right: 0px;
+          align-items: center;
+        }
+        justify-content: center;
+        flex-direction: row;
       }
     }
   }

@@ -49,4 +49,22 @@
   text-decoration: none;
   font-size: 3em;
 }
+
+@media (max-width: 770px) {
+  .intro {
+    display: block;
+  }
+  p,
+  .banner,
+  span,
+  .intro {
+    text-align: center;
+  }
+  .home div {
+    width: 90%;
+  }
+  .home div.button button {
+    margin-top: 100px;
+  }
+}
 /*# sourceMappingURL=home.css.map */

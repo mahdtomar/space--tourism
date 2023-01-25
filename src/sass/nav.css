@@ -68,4 +68,53 @@ nav hr {
   background-color: white;
   z-index: 9;
 }
+
+@media (max-width: 770px) {
+  .nav-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  nav .blur {
+    width: 100%;
+    -webkit-backdrop-filter: blur(100px);
+            backdrop-filter: blur(100px);
+    padding: 0px 20px;
+  }
+  nav .blur ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style-type: none;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0px 0px;
+    background-blend-mode: darken;
+  }
+  nav .blur ul a {
+    margin-inline: 0px;
+  }
+  nav .blur ul a span {
+    z-index: 10;
+    font-weight: bold;
+    letter-spacing: 0px;
+  }
+  nav img {
+    padding: 0px 20px;
+  }
+  nav hr {
+    display: none;
+    position: absolute;
+    width: 27%;
+    left: 25%;
+    background-color: white;
+    z-index: 9;
+  }
+}
 /*# sourceMappingURL=nav.css.map */

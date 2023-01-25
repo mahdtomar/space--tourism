@@ -1,16 +1,16 @@
 import React from "react";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../sass/home.css";
-import Nav from "./Nav";
+// import Nav from "./Nav";
 
 const Home = () => {
-  useEffect(() => {
-    let exploreBtn = document.getElementById('exploreBtn')
-    function goto(){
+  // useEffect(() => {
+  //   let exploreBtn = document.getElementById('exploreBtn')
+  //   function goto(){
     
-    }
-  }, []);
+  //   }
+  // }, []);
   return (
     <section className="home f-2">
       <div>
@@ -25,7 +25,7 @@ const Home = () => {
       </div>
       <div className="button">
         <button>
-          <Link onClick={} id='exploreBtn'to="/Destination/moon">Explore</Link>
+          <Link id='exploreBtn'to="/Destination/moon">Explore</Link>
         </button>
       </div>
     </section>

@@ -36,7 +36,8 @@
         border-radius: 50%;
         background-color: grey;
         transition: 0.1s background;
-        &[active],&:hover {
+        &[active],
+        &:hover {
           background-color: white;
         }
       }
@@ -48,4 +49,53 @@
       height: 100%;
     }
   }
+}
+@media (max-width: 770px) {
+  .Crew {
+    margin-top: 300px;
+    flex-direction: column-reverse;
+    .f-2-v {
+      margin-top: 100px;
+      max-width: 50%;
+      position: relative;
+      flex-direction: column-reverse;
+      .person-info {
+        margin-top: 50px;
+        .job-title{
+          display: block;
+        }
+        .banner {
+          font-size: 5em;
+        }
+      }
+      .navigation {
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        right: 0%;
+        transform: translateX(0%);
+        margin-top: 30px auto;
+        .dot {
+          display: block;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background-color: grey;
+          transition: 0.1s background;
+          &[active],
+          &:hover {
+            background-color: white;
+          }
+        }
+      }
+    }
+    .image {
+      height: auto;
+      img {
+        height: 90%;
+      }
+    }
+  }
+  
 }

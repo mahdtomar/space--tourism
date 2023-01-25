@@ -63,4 +63,64 @@
 .Crew .image img {
   height: 100%;
 }
+
+@media (max-width: 770px) {
+  .Crew {
+    margin-top: 300px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .Crew .f-2-v {
+    margin-top: 100px;
+    max-width: 50%;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .Crew .f-2-v .person-info {
+    margin-top: 50px;
+  }
+  .Crew .f-2-v .person-info .job-title {
+    display: block;
+  }
+  .Crew .f-2-v .person-info .banner {
+    font-size: 5em;
+  }
+  .Crew .f-2-v .navigation {
+    width: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    right: 0%;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    margin-top: 30px auto;
+  }
+  .Crew .f-2-v .navigation .dot {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: grey;
+    -webkit-transition: 0.1s background;
+    transition: 0.1s background;
+  }
+  .Crew .f-2-v .navigation .dot[active], .Crew .f-2-v .navigation .dot:hover {
+    background-color: white;
+  }
+  .Crew .image {
+    height: auto;
+  }
+  .Crew .image img {
+    height: 90%;
+  }
+}
 /*# sourceMappingURL=crew.css.map */

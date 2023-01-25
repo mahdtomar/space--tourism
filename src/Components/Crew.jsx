@@ -2,21 +2,21 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../sass/crew.css";
 const Crew = (props) => {
-  useEffect(()=>{
+  useEffect(() => {
     let dots = document.querySelectorAll(".dot");
-    dots.forEach((dot)=>{
-      dot.addEventListener("click",(e)=>{
-        let currentSpan = e.target 
-        setActive(currentSpan)
-      })
-    })
-    function setActive(target){
-      dots.forEach((dot)=>{
-        dot.removeAttribute("active")
-      })
-      target.setAttribute("active",'true')
+    dots.forEach((dot) => {
+      dot.addEventListener("click", (e) => {
+        let currentSpan = e.target;
+        setActive(currentSpan);
+      });
+    });
+    function setActive(target) {
+      dots.forEach((dot) => {
+        dot.removeAttribute("active");
+      });
+      target.setAttribute("active", "true");
     }
-  },[])
+  }, []);
   return (
     <section className="Crew f-2">
       <div className="f-2-v text-container">
@@ -27,7 +27,7 @@ const Crew = (props) => {
         </div>
         <div className="navigation">
           <Link to="/Crew/Victor-Glover">
-            <span active='true' className="dot"></span>
+            <span active="true" className="dot"></span>
           </Link>
           <Link to="/Crew/Mark-Shuttleworth">
             <span className="dot"></span>

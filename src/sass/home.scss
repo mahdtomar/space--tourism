@@ -36,3 +36,24 @@
     }
   }
 }
+@media (max-width: 770px) {
+  .intro {
+    display: block;
+  }
+  p,
+  .banner,
+  span,
+  .intro {
+    text-align: center;
+  }
+  .home {
+    div {
+      width: 90%;
+      &.button {
+        button {
+          margin-top: 100px;
+        }
+      }
+    }
+  }
+}

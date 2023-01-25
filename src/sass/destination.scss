@@ -55,6 +55,9 @@
     img {
       margin: 40px 0px;
       width: 80%;
+      animation-name: spinning;
+      animation-duration: 100s;
+      animation-iteration-count: infinite;
     }
     p {
       font-size: 2em;
@@ -79,7 +82,7 @@
         }
       }
     }
-    .planet-info{
+    .planet-info {
       .planet-calc.f-2 {
         div {
           margin-right: 0px;
@@ -89,5 +92,13 @@
         flex-direction: row;
       }
     }
+  }
+}
+@keyframes spinning {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

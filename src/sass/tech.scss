@@ -9,7 +9,7 @@
     width: 60%;
     .info {
       width: 80%;
-      .operation-name{
+      .operation-name {
         font-family: "Forum", cursive;
         font-size: 2.5em;
         letter-spacing: 2px;
@@ -57,10 +57,9 @@
     }
     .info-container {
       width: 90%;
-
       .info {
         width: 80%;
-        .operation-name{
+        .operation-name {
           display: block;
         }
       }
@@ -69,7 +68,7 @@
         padding-right: 00px;
         flex-direction: row;
         .link {
-          margin-inline:20px;
+          margin-inline: 20px;
           border: 2px solid white;
           border-radius: 50%;
           width: 100px;

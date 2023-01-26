@@ -24,9 +24,11 @@ const Home = () => {
         </p>
       </div>
       <div className="button">
-        <button>
-          <Link id='exploreBtn'to="/Destination/moon">Explore</Link>
-        </button>
+          <Link id='exploreBtn'to="/Destination/moon">
+            <button>
+            Explore
+            </button>
+          </Link>
       </div>
     </section>
   );

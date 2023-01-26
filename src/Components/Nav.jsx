@@ -42,7 +42,7 @@ const Nav = () => {
         <hr />
         <div className="blur">
           <ul>
-            <Link className="main-nav-btn" to="/">
+            <Link className="main-nav-btn" to="/space--tourism">
               <span>00</span> Home
             </Link>
             <Link

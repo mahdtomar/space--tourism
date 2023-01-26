@@ -33,7 +33,7 @@ function App() {
       <Nav />
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/space--tourism" element={<Home />} />
           {/* Destinatin routes */}
           <Route
             path="/Destination/moon"

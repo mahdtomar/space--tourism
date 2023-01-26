@@ -13,9 +13,21 @@
 body {
   height: 100vh;
   background-color: gray;
-  background-image: url("../assets/backgrounds/home.jpg");
   background-size: cover;
   overflow-x: hidden;
+  background-image: url("../assets/backgrounds/home.jpg");
+  &.main {
+    background-image: url("../assets/backgrounds/home.jpg");
+  }
+  &.tech {
+    background-image: url("../assets/backgrounds/tech.jpg");
+  }
+  &.moon{
+    background-image: url("../assets/backgrounds/moon.jpg");
+  }
+  &.crew{
+    background-image: url("../assets/backgrounds/crew.jpg");
+  }
 }
 .container {
   margin: auto;
@@ -46,8 +58,8 @@ body {
     flex-direction: column;
   }
 }
-@media (max-width : 450px) {
-  .banner{
+@media (max-width: 450px) {
+  .banner {
     font-size: 4em;
   }
 }

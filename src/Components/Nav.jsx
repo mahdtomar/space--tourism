@@ -3,12 +3,6 @@ import logo from "../shared/logo.svg";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 const Nav = () => {
-  // function changeVisibilty() {
-  //   console.log(document.querySelector("blur"))
-  //   document.querySelector("blur").style.display === "none"
-  //     ? (document.querySelector("blur").style.display = "block")
-  //     : (document.querySelector("blur").style.display = "none");
-  // }
   useEffect(() => {
     console.log("fires");
     let btns = document.querySelectorAll(".main-nav-btn"); // selecting the a tags in nav
@@ -34,7 +28,9 @@ const Nav = () => {
     });
   }, []);
   function changeBG(bg) {
-    document.body.style.backgroundImage = `${bg}.jpg`;
+    console.log(document.body.classList);
+    document.body.removeAttribute("class");
+    document.body.classList.add(bg);
   }
   return (
     <nav>

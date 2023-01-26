@@ -34,7 +34,6 @@ function App() {
       <main>
         <Routes>
           <Route path="/space--tourism" element={<Home />} />
-          {/* Destinatin routes */}
           <Route
             path="/Destination/moon"
             element={

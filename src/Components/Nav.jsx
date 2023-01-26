@@ -28,13 +28,14 @@ const Nav = () => {
     let menu = document.getElementById("menu");
     let list = document.querySelector(".blur");
     menu.addEventListener("click", () => {
-
-
       list.hasAttribute("visible")
         ? list.removeAttribute("visible")
         : list.setAttribute("visible", true);
     });
   }, []);
+  function changeBG(bg) {
+    document.body.style.backgroundImage = `${bg}.jpg`;
+  }
   return (
     <nav>
       <div className="container nav-container f-2">
@@ -42,20 +43,41 @@ const Nav = () => {
         <hr />
         <div className="blur">
           <ul>
-            <Link className="main-nav-btn" to="/space--tourism">
+            <Link
+              className="main-nav-btn"
+              onClick={() => {
+                changeBG("main");
+              }}
+              to="/space--tourism"
+            >
               <span>00</span> Home
             </Link>
             <Link
               className="main-nav-btn"
               id="destination"
               to="/Destination/moon"
+              onClick={() => {
+                changeBG("moon");
+              }}
             >
               <span>01</span> Destination
             </Link>
-            <Link className="main-nav-btn" to="/Crew/victor-glover">
+            <Link
+              className="main-nav-btn"
+              onClick={() => {
+                changeBG("crew");
+              }}
+              to="/Crew/victor-glover"
+            >
               <span>02</span> Crew
             </Link>
-            <Link className="main-nav-btn" to="/Technology/vehicle">
+            <Link
+              className="main-nav-btn"
+              onClick={() => {
+                changeBG("tech");
+              }}
+              to="/Technology/vehicle"
+            >
               <span>03</span> Technology
             </Link>
           </ul>

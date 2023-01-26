@@ -1,16 +1,28 @@
 import React from "react";
-// import { useEffect } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../sass/home.css";
 // import Nav from "./Nav";
 
 const Home = () => {
-  // useEffect(() => {
-  //   let exploreBtn = document.getElementById('exploreBtn')
-  //   function goto(){
-    
-  //   }
-  // }, []);
+  useEffect(() => {
+    let btns = document.querySelectorAll(".main-nav-btn"); // selecting the a tags in nav
+    let exploreBtn = document.getElementById("exploreBtn");
+    let destination = document.getElementById("destination");
+    console.log(exploreBtn);
+    console.log(destination);
+    function setActive(e) {
+      btns.forEach((btn) => {
+        btn.removeAttribute("active");
+      });
+      e.setAttribute("active", true);
+    }
+    exploreBtn.addEventListener("click", () => {
+      setActive(destination);
+      document.body.removeAttribute("class");
+      document.body.classList.add("moon");
+    });
+  }, []);
   return (
     <section className="home f-2">
       <div>
@@ -24,11 +36,9 @@ const Home = () => {
         </p>
       </div>
       <div className="button">
-          <Link id='exploreBtn'to="/Destination/moon">
-            <button>
-            Explore
-            </button>
-          </Link>
+        <Link id="exploreBtn" to="/Destination/moon">
+          <button>Explore</button>
+        </Link>
       </div>
     </section>
   );

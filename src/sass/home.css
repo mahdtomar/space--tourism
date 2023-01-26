@@ -67,4 +67,19 @@
     margin-top: 100px;
   }
 }
+
+@media (max-width: 450px) {
+  .home div {
+    width: 90%;
+  }
+  .home div .banner {
+    font-size: 4em;
+  }
+  .home div.button {
+    width: 100%;
+  }
+  .home div.button button {
+    margin-top: 100px;
+  }
+}
 /*# sourceMappingURL=home.css.map */

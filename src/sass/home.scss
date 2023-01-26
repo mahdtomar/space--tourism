@@ -57,3 +57,19 @@
     }
   }
 }
+@media (max-width: 450px) {
+  .home {
+    div {
+      width: 90%;
+      .banner {
+        font-size: 4em;
+      }
+      &.button {
+        width: 100%;
+        button {
+          margin-top: 100px;
+        }
+      }
+    }
+  }
+}

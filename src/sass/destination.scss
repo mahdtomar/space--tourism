@@ -56,7 +56,7 @@
       margin: 40px 0px;
       width: 80%;
       animation-name: spinning;
-      animation-duration: 100s;
+      animation-duration: 300s;
       animation-iteration-count: infinite;
     }
     p {
@@ -70,6 +70,9 @@
 }
 @media (max-width: 770px) {
   .destination {
+    >div{
+      width: 80%;
+    }
     .planet {
       align-items: center;
     }
@@ -84,6 +87,7 @@
     }
     .planet-info {
       .planet-calc.f-2 {
+        align-items: flex-start;
         div {
           margin-right: 0px;
           align-items: center;
@@ -91,6 +95,13 @@
         justify-content: center;
         flex-direction: row;
       }
+    }
+  }
+}
+@media (max-width:450px) {
+  .destination{
+    >div{
+      width: 90%;
     }
   }
 }

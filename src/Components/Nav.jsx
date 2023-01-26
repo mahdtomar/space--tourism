@@ -3,6 +3,12 @@ import logo from "../shared/logo.svg";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 const Nav = () => {
+  // function changeVisibilty() {
+  //   console.log(document.querySelector("blur"))
+  //   document.querySelector("blur").style.display === "none"
+  //     ? (document.querySelector("blur").style.display = "block")
+  //     : (document.querySelector("blur").style.display = "none");
+  // }
   useEffect(() => {
     console.log("fires");
     let btns = document.querySelectorAll(".main-nav-btn"); // selecting the a tags in nav
@@ -19,6 +25,15 @@ const Nav = () => {
       });
       e.setAttribute("active", true);
     }
+    let menu = document.getElementById("menu");
+    let list = document.querySelector(".blur");
+    menu.addEventListener("click", () => {
+
+
+      list.hasAttribute("visible")
+        ? list.removeAttribute("visible")
+        : list.setAttribute("visible", true);
+    });
   }, []);
   return (
     <nav>
@@ -44,6 +59,11 @@ const Nav = () => {
               <span>03</span> Technology
             </Link>
           </ul>
+        </div>
+        <div className="menu" id="menu">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </nav>

@@ -36,7 +36,7 @@ const Home = () => {
         </p>
       </div>
       <div className="button">
-        <Link id="exploreBtn" to="/Destination/moon">
+        <Link id="exploreBtn" to="/space--tourism/Destination/moon">
           <button>Explore</button>
         </Link>
       </div>

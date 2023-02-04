@@ -25,13 +25,13 @@ const Technology = (props) => {
     <section className="technology f-2">
       <div className="info-container f-2">
         <nav className="f-2-v link-container">
-          <Link className="link" active="ture" to="/Technology/vehicle">
+          <Link className="link" active="ture" to="/space--tourism/Technology/vehicle">
             1
           </Link>
-          <Link className="link" to="/Technology/capsule">
+          <Link className="link" to="/space--tourism/Technology/capsule">
             2
           </Link>
-          <Link className="link" to="/Technology/spaceport">
+          <Link className="link" to="/space--tourism/Technology/spaceport">
             3
           </Link>
         </nav>

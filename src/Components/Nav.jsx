@@ -51,7 +51,7 @@ const Nav = () => {
             <Link
               className="main-nav-btn"
               id="destination"
-              to="/Destination/moon"
+              to="/space--tourism/Destination/moon"
               onClick={() => {
                 changeBG("moon");
               }}
@@ -63,7 +63,7 @@ const Nav = () => {
               onClick={() => {
                 changeBG("crew");
               }}
-              to="/Crew/victor-glover"
+              to="/space--tourism/Crew/victor-glover"
             >
               <span>02</span> Crew
             </Link>
@@ -72,7 +72,7 @@ const Nav = () => {
               onClick={() => {
                 changeBG("tech");
               }}
-              to="/Technology/vehicle"
+              to="/space--tourism/Technology/vehicle"
             >
               <span>03</span> Technology
             </Link>

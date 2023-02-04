@@ -25,16 +25,16 @@ const Destination = (props) => {
       <div className="info-container">
         <nav>
           <ul>
-            <Link className="planet-btn" active="true" to="/Destination/moon">
+            <Link className="planet-btn" active="true" to="/space--tourism/Destination/moon">
               moon
             </Link>
-            <Link className="planet-btn" to="/Destination/titan">
+            <Link className="planet-btn" to="/space--tourism/Destination/titan">
               titan
             </Link>
-            <Link className="planet-btn" to="/Destination/europa">
+            <Link className="planet-btn" to="/space--tourism/Destination/europa">
               europa
             </Link>
-            <Link className="planet-btn" to="/Destination/mars">
+            <Link className="planet-btn" to="/space--tourism/Destination/mars">
               mars
             </Link>
           </ul>

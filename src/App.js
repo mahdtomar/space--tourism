@@ -36,7 +36,7 @@ function App() {
           <Route path="/space--tourism" element={<Home />} />
           {/* Destinatin routes */}
           <Route
-            path="/Destination/moon"
+            path="/space--tourism/Destination/moon"
             element={
               <Destination
                 planet={<Planet image={moon} />}
@@ -54,7 +54,7 @@ function App() {
           />
 
           <Route
-            path="/Destination/titan"
+            path="/space--tourism/Destination/titan"
             element={
               <Destination
                 planet={<Planet image={titan} />}
@@ -72,7 +72,7 @@ function App() {
           />
 
           <Route
-            path="/Destination/mars"
+            path="/space--tourism/Destination/mars"
             element={
               <Destination
                 planet={<Planet image={mars} />}
@@ -90,7 +90,7 @@ function App() {
           />
 
           <Route
-            path="/Destination/europa"
+            path="/space--tourism/Destination/europa"
             element={
               <Destination
                 planet={<Planet image={europa} />}
@@ -108,7 +108,7 @@ function App() {
           />
           {/* crew routes */}
           <Route
-            path="Crew/Victor-Glover"
+            path="/space--tourism/Crew/Victor-Glover"
             element={
               <Crew
                 job="Pilot"
@@ -120,7 +120,7 @@ function App() {
           />
 
           <Route
-            path="Crew/Douglas-Hurley"
+            path="/space--tourism/Crew/Douglas-Hurley"
             element={
               <Crew
                 job="Commander"
@@ -132,7 +132,7 @@ function App() {
           />
 
           <Route
-            path="Crew/Anousheh-Ansari"
+            path="/space--tourism/Crew/Anousheh-Ansari"
             element={
               <Crew
                 job="Flight Engineer"
@@ -144,7 +144,7 @@ function App() {
           />
 
           <Route
-            path="Crew/Mark-Shuttleworth"
+            path="/space--tourism/Crew/Mark-Shuttleworth"
             element={
               <Crew
                 job="Mission Specialist"
@@ -157,7 +157,7 @@ function App() {
           {/* technology routes */}
 
           <Route
-            path="Technology/vehicle"
+            path="/space--tourism/Technology/vehicle"
             element={
               <Technology
                 intro="The terminology..."
@@ -171,7 +171,7 @@ function App() {
             }
           />
           <Route
-            path="Technology/Spaceport"
+            path="/space--tourism/Technology/Spaceport"
             element={
               <Technology
                 intro="The terminology..."
@@ -185,7 +185,7 @@ function App() {
             }
           />
           <Route
-            path="Technology/capsule"
+            path="/space--tourism/Technology/capsule"
             element={
               <Technology
                 intro="The terminology..."

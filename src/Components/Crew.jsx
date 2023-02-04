@@ -26,16 +26,16 @@ const Crew = (props) => {
           <p>{props.description}</p>
         </div>
         <div className="navigation">
-          <Link to="/Crew/Victor-Glover">
+          <Link to="/space--tourism/Crew/Victor-Glover">
             <span active="true" className="dot"></span>
           </Link>
-          <Link to="/Crew/Mark-Shuttleworth">
+          <Link to="/space--tourism/Crew/Mark-Shuttleworth">
             <span className="dot"></span>
           </Link>
-          <Link to="/Crew/Anousheh-Ansari">
+          <Link to="/space--tourism/Crew/Anousheh-Ansari">
             <span className="dot"></span>
           </Link>
-          <Link to="/Crew/Douglas-Hurley">
+          <Link to="/space--tourism/Crew/Douglas-Hurley">
             <span className="dot"></span>
           </Link>
         </div>
